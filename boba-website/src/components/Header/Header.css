@@ -1,0 +1,45 @@
+/* Header Container */
+.header {
+    background-color: black;
+    padding: 5px 10px; /* Less space on the sides */
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    height: 78px; /* Increase logo size */
+    object-fit: contain;
+  }
+  
+  /* Button Container */
+  .header-buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+  }
+  
+  /* Button Styling */
+  .header-button {
+    background: none;
+    border: none;
+    color: #fee2d5;
+    font-size: 17px; /* Increase text size */
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .header-button:hover {
+    color: #fee2d5; /* Slightly lighter beige for hover effect */
+    transform: scale(1.1); /* Slight hover effect */
+  }
+  
+  .header-button:focus {
+    outline: none;
+  }

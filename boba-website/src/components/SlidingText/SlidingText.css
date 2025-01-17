@@ -1,0 +1,36 @@
+/* Container for the scrolling text */
+.sliding-text-container {
+    background-color: #fee2d5; /* Beige background */
+    overflow: hidden; /* Hides text outside the container */
+    white-space: nowrap; /* Prevents text wrapping */
+    width: 100%;
+    height: 70px; /* Taller bar */
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Text that scrolls */
+  .sliding-text {
+    display: inline-block;
+    color: black;
+    font-size: 24px; /* Larger text */
+    font-weight: bold;
+    animation: slide-seamless 12s linear infinite;
+  }
+  
+  /* Keyframes for seamless scrolling */
+  @keyframes slide-seamless {
+    0% {
+      transform: translateX(-50%); /* Start at normal position */
+    }
+    100% {
+      transform: translateX(0%); /* Move left by half its width */
+    }
+  }
+  
+  /* Ensure the width of the text spans enough to seamlessly wrap */
+  .sliding-text::after {
+    content: attr(content); /* Duplicate content to make seamless */
+  }
+  
