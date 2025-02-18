@@ -1,0 +1,88 @@
+/* Media Section */
+.media-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+                url("../../images/coffeeshop2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center entire content */
+    text-align: center;  /* Ensures text is centered */
+    justify-content: space-between;
+}
+
+/* Content Area */
+.media-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers content vertically */
+    width: 100%;
+    max-width: 90rem;
+    color: #fee2d5;
+    text-align: center; /* Centers all text */
+}
+
+/* Media Row */
+.media-row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem; /* Adds space between images */
+    max-width: 80rem;
+    width: 100%;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+.media-row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centers the row */
+    gap: .75rem; /* Adds space between images */
+    max-width: 85rem;
+    width: 100%;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Row Text */
+.media-row-text1 {
+    flex: 1; /* Allows it to take space evenly */
+    max-width: 15%;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.media-row-text2 {
+    flex: 1; /* Allows it to take space evenly */
+    max-width: 15%;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.media-main-title {
+    font-size: 5rem;
+}
+.media-sub-text {
+    font-size: 1.7rem;
+    font-weight: 700;
+    width: 55%;
+    margin-top: -4rem;
+}
+
+/* Wave Container */
+.wave-container-media {
+    width: 100%;
+}
+
+/* Wave Image */
+.wave-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Top Wave Fix */
+.top-wave {
+    transform: translate(0, -2px);
+}

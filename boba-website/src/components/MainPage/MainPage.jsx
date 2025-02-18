@@ -9,8 +9,8 @@ export default function MainPage() {
     <>
       <IntroSection />
       <AboutSection />
-      {/* <MediaSection />
-      <FeatureSection /> */}
+      <MediaSection />
+      {/* <FeatureSection /> */}
     </>
   );
 }
